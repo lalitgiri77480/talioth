@@ -1,0 +1,14 @@
+version: '3.4'
+services:
+  client-app:
+    image: client-image2:1.0.5
+    ports:
+      - '80:3000'
+    expose:
+      - '80'
+  server-app:
+    image: server-image5:latest
+    ports:
+      - '4002:1100'
+    expose:
+      - '4002'
